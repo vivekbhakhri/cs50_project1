@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}readGood|Home{% endblock %}
+{% block body %}
+  <button type="button" name="button"><a href="{{ url_for('signup') }}">signup </a></button>
+  <button type="button" name="button"><a href="{{ url_for('for_login') }}">login </a></button>
+  <button type="button" name="logout"><a href="{{ url_for('logout') }}">logout</a></button>
+  <h1>Hello</h1>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %} login page {% endblock %}
+{% block body %}
+{% if session['logged_in'] %}
+  <h4>You're logged in already!</h4>
+{% else %}
+<div class="login-box">
+  <img class="avatar" src="/static/images/avatar.png">
+  <form action="/login" method="post">
+    <p>Username</p>
+    <input type="text" name="username" placeholder="Enter username or email">
+    <p>Password</p>
+    <input type="password" name="password" placeholder="Enter Password">
+    <button type="submit">login</button>
+    <h5>don't have an account</h5>
+    <button type="button" name="Signup"><a href="url_for('/signup')">Signup</a></button>
+  </form>
+
+</div>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}success{% endblock %}
+{% block body %}
+  {% if session['logged_in'] %}
+    <button type="button" name="logout"><a href="{{ url_for('logout') }}">logout</a></button>
+    <form action="/results" method="post">
+      <label for="search">Search</label>
+      <input type="text" name="search" autocomplete="off">
+      <input type="submit" value="search">
+    </form>
+  {% else %}
+    plz login first
+  {% endif %}
+{% endblock %}
