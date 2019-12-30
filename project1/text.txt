@@ -1,3 +1,0 @@
-firstProject@321
-key: V6yarETYyOqPThd3HzHMpQ
-url: postgres://nhntkqqnmwgoxo:51eca6b61cb278560c3dd2a3e15039568e31105a68d65ea06dc7239b63b6d9ec@ec2-23-23-173-30.compute-1.amazonaws.com:5432/d1257qii589fe4
